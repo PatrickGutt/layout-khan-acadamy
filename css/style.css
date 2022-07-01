@@ -1,0 +1,149 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 60px;
+  border-bottom: 1px solid #d6d8da;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.b-icon:before, .a-icon:after {
+  display: inline-block;
+  font: var(--fa-font-solid);
+}
+.nav-btn {
+  line-height: 60px;
+}
+.search-btn {
+
+  line-height: 40px;
+}
+.nav-bar {
+  position: relative;
+}
+.left {
+  float: left;
+  margin-right: 30px;
+}
+.right {
+  float: right;
+  margin-left: 30px;
+}
+.btn {
+  text-decoration: none;
+  color: #1865f2;
+}
+.search:after {
+  margin-left: 110px;
+  font-size: large;
+  content: "\f002";
+  color: #888d93;
+}
+.nav-courses-dropdown:after {
+  content: "\f0d7";
+  padding-left: 5px;
+}
+.search {
+  padding-left: 10px;
+  margin-top: 10px;
+  display: block;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  background: #f0f1f2;
+}
+.search:hover {
+  background: #e3e5e6;
+}
+.logo-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  text-align: center;
+}
+
+.logo {
+  color: #0a2a66;
+  font-size: 22px;
+  font-weight: 900;
+}
+.logo:hover {
+  color: #1865f2;
+}
+.picture {
+  display: block;
+  margin: 10px;
+  height: calc(100% - 20px);
+  border: 1px solid #d6d8da;
+}
+.module {
+  width: 50%;
+  height: 525px;
+  margin-top: 30px;
+  border: 1px solid white;
+}
+.title {
+  font-size: 56px;
+}
+.left-1 {
+  float: left;
+}
+.right-1 {
+  float: right;
+}
+
+.module-btn {
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #1865f2;
+  height: 40px;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+.title {
+  margin-top: 75px;
+}
+.content {
+  margin-top: 25px;
+}
+.module-btn:hover {
+  background: #1044a5;
+}
